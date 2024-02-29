@@ -1,0 +1,694 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url("fonts/Montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: Cuyabra;
+    src: url("fonts/Cuyabra/cuyabra-Regular.ttf");
+}
+@font-face {
+    font-family: Cooperplate;
+    src: url("fonts/Cooperplate/Copperplate_Gothic_Bold\(RUS\ BY.ttf)");
+}
+@font-face {
+    font-family: Mistral;
+    src: url("fonts/Mistral/ofont.ru_Mistral.ttf");
+}
+html {
+    font-family: Montserrat;
+    background-color: #2e2e2e;
+}
+.bg_image img{
+    width: 100%;
+    height:  700px;
+    position: relative;
+    border-bottom-right-radius: 30%;
+}
+.bg_image .shadow {
+    background: #000;
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    opacity: 50%;
+    border-bottom-right-radius: 30%;
+}
+
+.prev_content {
+    position: absolute;
+    top: 0;
+    color: #fff;
+}
+.name {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+}
+.logo img {
+    width: 20%;
+    height: auto;
+    margin-top: 0.5em;
+    margin-left: 40%;
+}
+.description p{
+    margin-left: 0;
+    margin-top: 1em;
+    text-align: center;
+    font-size: 20px;
+}
+.buttons a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FDA172;
+    border: 1px solid #FDA172;
+    padding: 15px 35px;
+    font-weight: 900;
+    transition: all .5s ease-in-out;
+}
+.buttons {
+    margin-left: 41%;
+    margin-top: 3.5em;
+}
+.buttons a:hover {
+    background-color: #FDA172;
+    color: #fff;
+}
+.about {
+    margin-top: -4px;
+    padding: 2.5em 2em;    
+}
+.prev_head h2{
+    color: #FDA172;
+    font-family: Mistral;
+    font-size: 35px;
+    font-weight: 100;
+}
+.heading h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    color: #FDA172;
+}
+.text p {
+    color: #fff;
+    font-size: 24px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.content h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 900;
+}
+.right_up {
+    margin-bottom: 1.5em;
+    margin-left: 10em;
+}
+.right_down {
+    margin-left: 5.3em;
+}
+.scrollup {
+    width: 40px;
+    height: 40px;
+    opacity: .5;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    display: none;
+    text-indent: -9999px;
+    background: url("img/icon_top.png") no-repeat;
+    transition: all .5s ease-in-out;
+}
+.scrollup:hover {
+    opacity: 1;
+}
+.image-stack {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: -6em;
+}
+.image-stack__item--top {  
+    grid-column: 1 / span 8;
+    grid-row: 1;
+    padding-top: 15%;
+    z-index: 1;
+}
+.image-stack__item--bottom {
+    grid-column: 3 / -1;
+    grid-row: 1;
+}
+.image-stack__item--bottom img {
+    width: 40%;
+    margin-left: 55em;
+    margin-top: -30em;
+}
+.image-stack__item--top img {
+    width: 40%;
+    margin-left: 55em;
+    margin-top: -30em;
+}
+.header-reason {
+    text-align: center;
+    text-transform: uppercase;
+    color: #FDA172;
+    font-size: 10px;
+    font-family: Mistral;
+    font-weight: 100;
+}
+.granica {
+    width: 3%;
+    margin-left: 48.5%;
+    border-bottom: 1px solid #FDA172;
+    margin-bottom: 20px;
+}
+.leader-header {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+.image--1 img,
+.image--2 img,
+.image--3 img,
+.image--4 img,
+.image--5 img,
+.image--6 img,
+.image--7 img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    clip-path: polygon(50% 10%, 80% 50%, 50% 90%, 20% 50%);
+}
+.image--1 img {
+    width: 35%;
+    margin-top: 0em;
+}
+.image--2 img {
+    width: 30%;
+    margin-left: 80em;
+    margin-top: -15em;
+}
+.image--3 img {
+    width: 25%;
+    margin-left: 13em;
+    margin-top: -26em;
+}
+.image--4 img {
+    width: 20%;
+    margin-left: 30em;
+    margin-top: -23.5em;
+}
+.image--5 img {
+    width: 20%;
+    margin-left: 80em;
+    margin-top: -2.5em;
+}
+.image--6 img {
+    width: 15%;
+    margin-left: 30em;
+}
+.image--7 img {
+    width: 15%;
+    margin-left: 60em;
+    margin-top: -26em;
+}
+.vertical-line {
+    border-left: 1px solid #FDA172;
+    height: 700px;
+    margin-left: 50%;
+    margin-top: -25%;
+}
+.reasons-text {
+    color: #fff;
+}
+.first-reason h1,
+.second-reason h1,
+.third-reason h1,
+.fourth-reason h1,
+.fifth-reason h1 {
+    color: #FDA172;
+    font-weight: 100;
+    font-size: 30px;
+    font-family: Mistral;
+}
+.first-reason {
+    margin-top: -42em;
+    margin-left: 60em;
+}
+.second-reason {
+    margin-top: 2.3em;
+    margin-left: 60em;
+}
+.third-reason {
+    margin-left: 22em;
+    margin-top: 6em;
+}
+.fourth-reason {
+    margin-left: 60em;
+    margin-top: 1em;
+}
+.fifth-reason {
+    margin-left: 60em;
+    margin-top: 2.3em;
+}
+.menu {
+    margin-top: 5em;
+}
+.menu--content {
+    position: absolute;
+    top: 259%;
+}
+.heading--menu h1 {
+    color: #FDA172;
+    font-family: Mistral;
+    font-weight: 100;
+}
+.heading--menu p {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 35px;
+}
+.heading--menu a {
+    text-decoration: none;
+    color: #FDA172;
+}
+
+.bg--menu img {
+    width: 100%;
+    height:  900px;
+    position: relative;
+}
+.bg--menu .menu--shadow_image {
+    background: #000;
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    top: 257.7%;
+    opacity: 50%;
+}
+.menu__elements {
+    display: flex;
+    flex-wrap: wrap;
+}
+.background {
+    width: 450px;
+    height: 700px;
+    border-radius: 3%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 8em;
+    margin-top: 2em;
+    padding: 1.5em;
+}
+.menu--image img{
+    width: 400px;
+    height: 400px;
+}
+.menu--name h2{
+    font-family: Mistral;
+    font-weight: 100;
+    text-align: center;
+    font-size: 50px;
+}
+.menu--name ul{
+    font-family: Cuyabra;
+    margin-left:  2em;
+    line-height: 1.5;
+}
+.price {
+    font-size: 30px;
+    margin-left: 1em;
+    font-weight: 900;
+    font-family: Mistral;
+}
+.product a{
+    text-decoration: none;
+    color: #000;
+    transition: all .5s ease-in-out;
+}
+.product a:hover {
+    color: #FDA172;
+}
+.heading--personal h1 {
+    color: #FDA172;
+    font-family: Mistral;
+    font-weight: 100;
+}
+.heading--personal p {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 35px;
+}
+.about--personal_text p{
+    color: #fff;
+}
+.team {
+    display: flex;
+    flex-wrap: wrap;
+}
+.image_barista{
+    width: 300px;
+    height: 300px;
+    background-image: url("img/barista.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 2em;
+    margin-left: 8em;
+}
+.image_officiant-1 {
+    width: 300px;
+    height: 300px;
+    background-image: url("img/oficiant1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 2em;
+    margin-left: 8em;
+}
+.image_officiant-2 {
+    width: 300px;
+    height: 300px;
+    background-image: url("img/oficiant2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 2em;
+    margin-left: 8em;
+}
+.image_leader {
+    width: 300px;
+    height: 300px;
+    background-image: url("img/leader.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 2em;
+    margin-left: 8em;
+}
+.team-elem_desc-1 {
+    width: 55%;
+    background-color: #FDA172;
+    padding: 10px 20px;
+    text-align: center;
+    margin-left: 9.8em;
+    margin-top: -2.5em;
+}
+.team-elem_desc-2 {
+    width: 55%;
+    background-color: #FDA172;
+    padding: 10px 20px;
+    text-align: center;
+    margin-left: 10em;
+    margin-top: -2.5em;
+}
+.team-elem_desc-3 {
+    width: 64%;
+    background-color: #FDA172;
+    padding: 10px 20px;
+    text-align: center;
+    margin-left: 8.8em;
+    margin-top: -2.5em;
+}
+.team-elem_desc-4 {
+    width: 55%;
+    background-color: #FDA172;
+    padding: 10px 20px;
+    text-align: center;
+    margin-left: 10em;
+    margin-top: -2.5em;
+}
+.team-elem_desc h1{
+    font-size: 25px;
+}
+.reservation {
+    margin-top: -1em;
+}
+.reservation-bg-image img {
+    width: 100%;
+    height: 850px;
+    position: relative;
+}
+.reservation-bg-shadow {
+    width: 100%;
+    height: 850px;
+    position: absolute;
+    background: rgba(0,0,0, .5);
+    margin-top: -53.35em;
+}
+.reservation-form {
+    margin-left: 50%;
+    position: absolute;
+    top: 520%;
+    background: #2e2e2e;
+    padding: 20px 20px;
+    width: 750px;
+    border: 4px solid #FDA172;
+    border-radius: 10%;
+    height: 600px;
+}
+.reservation-form h1 {
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+}
+.reservation-form input {
+    width: 550px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+textarea {
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+input {
+    margin-left: 10%;
+    margin-bottom: .5em;
+    padding-left: 15px;
+}
+.reservation-form p {
+    text-align: center;
+    color: #fff;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    font-size: 15px;
+}
+.reservation-form button {
+    padding: 10px 15px;
+    background: #FDA172;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    margin-left: 44%;
+    margin-top: 20px;
+    border: 1px solid #FDA172
+}
+
+.reservation-form button:hover {
+    background: #b16f4f;
+    border: 1px solid #FDA172;
+}
+.worktime-bg-image img {
+    width: 100%;
+    height: 850px;
+    margin-top: 3em;
+    position: relative;
+}
+.worktime-bg-shadow {
+    width: 100%;
+    height: 850px;
+    position: absolute;
+    background: rgba(0,0,0, .45);
+    margin-top: -53.35em;
+}
+.grafik {
+    background: #2e2e2e;
+    width: 320px;
+    height: 300px;
+    margin-top: -45em;
+    margin-left: 15em;
+    position: absolute;
+    padding: 20px;
+}
+.grafik-days p{
+    color: #fff;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+.grafik-days h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    color: #FDA172;
+}
+.grafik-days .number {
+    margin-top: 2em;
+    color: #FDA172;
+}
+@media (width: 1431px) {
+    .name {
+        font-size: 55px;
+        text-align: center;
+        margin-left: 10%;
+    }
+    .text p {
+        font-size: 18px;
+    }
+    .vertical-line {
+        margin-top: -3%;
+    }
+    .first-reason {
+        margin-left: 53%;
+    }
+    .second-reason {
+        margin-left: 53%;
+    }
+    .third-reason {
+        margin-left: 6%;
+        margin-top: 1em;
+    }
+    .fourth-reason {
+        margin-left: 53%;
+    }
+    .fifth-reason {
+        margin-left: 53%;
+    }
+    .bg--menu .menu--shadow_image {
+        top: 255.6%;
+    }
+    .menu--content {
+        top: 273%;
+        margin-left: 2em;
+    }
+    .background {
+        width: 300px;
+        height: 550px;
+        margin-left: 8em;
+        margin-top: 2em;
+        padding: 1.5em;
+    }
+    .menu--image img{
+        width: 250px;
+        height: 250px;
+    }
+    .menu--name h2{
+        font-size: 35px;
+    }
+    .menu--name ul{
+        margin-left:  2em;
+        font-size: 16px;
+    }
+    .price {
+        font-size: 20px;
+        margin-left: 1em;
+    }
+    .heading--personal {
+        margin-left: 1em;
+        margin-top: .5em;
+    }
+    .about--personal_text {
+        margin-left: 1em;
+        margin-top: .5em;
+    }
+    .image_barista{
+        width: 220px;
+        height: 220px;
+        margin-top: 2em;
+        margin-left: 8em;
+    }
+    .image_officiant-1 {
+        width: 220px;
+        height: 220px;
+        margin-top: 2em;
+        margin-left: 7em;
+    }
+    .image_officiant-2 {
+        width: 220px;
+        height: 220px;
+        margin-top: 2em;
+        margin-left: 4em;
+    }
+    .image_leader {
+        width: 220px;
+        height: 220px;
+        margin-top: 2em;
+        margin-left: 4em;
+    }
+    .team-elem_desc-1 {
+        margin-left: 8.8em;
+    }
+    .team-elem_desc-1 h1{
+        font-size: 20px;
+    }
+    .team-elem_desc-2 {
+        margin-left: 7.8em;
+    }
+    .team-elem_desc-2 h1{
+        font-size: 20px;
+    }
+    .team-elem_desc-3 {
+        margin-left: 5.3em;
+    }
+    .team-elem_desc-3 h1{
+        font-size: 20px;
+    }
+    .team-elem_desc-4 {
+        margin-left: 6em;
+    }
+    .team-elem_desc-4 h1{
+        font-size: 20px;
+    }
+    .image--1 img {
+        width: 25%;
+        margin-top: 0em;
+    }
+    .image--2 img {
+        width: 20%;
+        margin-left: 75em;
+        margin-top: -5em;
+    }
+    .image--3 img {
+        width: 20%;
+        margin-left: 7em;
+        margin-top: -16em;
+    }
+    .image--4 img {
+        width: 20%;
+        margin-left: 19em;
+        margin-top: -23.5em;
+    }
+    .image--5 img {
+        width: 25%;
+        margin-left: 70em;
+        margin-top: -9.5em;
+    }
+    .image--6 img {
+        width: 15%;
+        margin-left: 30em;
+    }
+    .image--7 img {
+        width: 15%;
+        margin-left: 60em;
+        margin-top: -26em;
+    }
+    .image-stack__item--bottom img {
+        margin-left: 40em;
+    }
+    .image-stack__item--top img {
+        margin-left: 40em;
+    }
+}
